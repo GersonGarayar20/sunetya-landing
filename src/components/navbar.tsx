@@ -3,11 +3,14 @@ import { Menu } from "./menu";
 
 export default function Navbar() {
   return (
-    <section>
-      <h1>Sunetya</h1>
+    <div className="border-b">
+      <section className="max-w-7xl mx-auto flex items-center justify-between gap-4 py-2">
+        <h1>Sunetya</h1>
 
-      {/* enlaces */}
-      <Menu />
-    </section>
+        {/* enlaces */}
+        <Menu />
+        <a href="#">Contactanos</a>
+      </section>
+    </div>
   );
 }
